@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1813243326DA00EF00026EAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813243226DA00EF00026EAC /* AppDelegate.swift */; };
 		1813243526DA00EF00026EAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813243426DA00EF00026EAC /* SceneDelegate.swift */; };
 		1813243726DA00EF00026EAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813243626DA00EF00026EAC /* ViewController.swift */; };
-		1813243A26DA00EF00026EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1813243826DA00EF00026EAC /* Main.storyboard */; };
 		1813243C26DA00F000026EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1813243B26DA00F000026EAC /* Assets.xcassets */; };
 		1813243F26DA00F000026EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1813243D26DA00F000026EAC /* LaunchScreen.storyboard */; };
 		1813244A26DA00F000026EAC /* FlickerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813244926DA00F000026EAC /* FlickerDemoTests.swift */; };
 		1813245526DA00F100026EAC /* FlickerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813245426DA00F100026EAC /* FlickerDemoUITests.swift */; };
+		1813246726DA015500026EAC /* FlickrSearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813246326DA015500026EAC /* FlickrSearchCollectionViewController.swift */; };
+		1813246826DA015500026EAC /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813246426DA015500026EAC /* PhotoCollectionViewCell.swift */; };
+		1813246926DA015500026EAC /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813246526DA015500026EAC /* SearchData.swift */; };
+		1813246B26DA01C600026EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1813246A26DA01C600026EAC /* Main.storyboard */; };
+		18A6484D26DD1448009BBECC /* FavoriteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6484C26DD1448009BBECC /* FavoriteCollectionViewController.swift */; };
+		18A6484F26DD1809009BBECC /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6484E26DD1809009BBECC /* MainTabbarViewController.swift */; };
+		18A6486C26DE867F009BBECC /* Favorite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18A6486A26DE867F009BBECC /* Favorite.xcdatamodeld */; };
+		CDBFA6FAF1C7D34A6B8BF40B /* Pods_FlickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103149F08FC3034849AD49B3 /* Pods_FlickerDemo.framework */; };
+		E39C4FD708DDF4E43251BCE2 /* Pods_FlickerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6120419EB1F73B79CC15157A /* Pods_FlickerDemoTests.framework */; };
+		E553434D535804CE401B0A3A /* Pods_FlickerDemo_FlickerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086562CAE66944175EE62A84 /* Pods_FlickerDemo_FlickerDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086562CAE66944175EE62A84 /* Pods_FlickerDemo_FlickerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickerDemo_FlickerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		103149F08FC3034849AD49B3 /* Pods_FlickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1813242F26DA00EF00026EAC /* FlickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1813243226DA00EF00026EAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1813243426DA00EF00026EAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1813243626DA00EF00026EAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1813243926DA00EF00026EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1813243B26DA00F000026EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1813243E26DA00F000026EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1813244026DA00F000026EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +59,20 @@
 		1813245026DA00F100026EAC /* FlickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1813245426DA00F100026EAC /* FlickerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerDemoUITests.swift; sourceTree = "<group>"; };
 		1813245626DA00F100026EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1813246326DA015500026EAC /* FlickrSearchCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearchCollectionViewController.swift; sourceTree = "<group>"; };
+		1813246426DA015500026EAC /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		1813246526DA015500026EAC /* SearchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
+		1813246A26DA01C600026EAC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		18A6484C26DD1448009BBECC /* FavoriteCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewController.swift; sourceTree = "<group>"; };
+		18A6484E26DD1809009BBECC /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		18A6486B26DE867F009BBECC /* Favorite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Favorite.xcdatamodel; sourceTree = "<group>"; };
+		2F58B8DFBD700F276DDA001F /* Pods-FlickerDemo-FlickerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerDemo-FlickerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlickerDemo-FlickerDemoUITests/Pods-FlickerDemo-FlickerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6120419EB1F73B79CC15157A /* Pods_FlickerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB93F15440C1059A0688D48 /* Pods-FlickerDemo-FlickerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerDemo-FlickerDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-FlickerDemo-FlickerDemoUITests/Pods-FlickerDemo-FlickerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB27C32D0D29E1F37F3A3B05 /* Pods-FlickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerDemo.release.xcconfig"; path = "Target Support Files/Pods-FlickerDemo/Pods-FlickerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E282398B6CDD856C1D9771A5 /* Pods-FlickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerDemo.debug.xcconfig"; path = "Target Support Files/Pods-FlickerDemo/Pods-FlickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FCC014C6A7D0B1180CE76446 /* Pods-FlickerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-FlickerDemoTests/Pods-FlickerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD3A0698DA51252504E32656 /* Pods-FlickerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-FlickerDemoTests/Pods-FlickerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBFA6FAF1C7D34A6B8BF40B /* Pods_FlickerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39C4FD708DDF4E43251BCE2 /* Pods_FlickerDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E553434D535804CE401B0A3A /* Pods_FlickerDemo_FlickerDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +106,13 @@
 		1813242626DA00EE00026EAC = {
 			isa = PBXGroup;
 			children = (
+				18A6486A26DE867F009BBECC /* Favorite.xcdatamodeld */,
 				1813243126DA00EF00026EAC /* FlickerDemo */,
 				1813244826DA00F000026EAC /* FlickerDemoTests */,
 				1813245326DA00F100026EAC /* FlickerDemoUITests */,
 				1813243026DA00EF00026EAC /* Products */,
+				9FC92591F8652A23755E4410 /* Pods */,
+				991783F8AE0ABE00B7553EF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +129,12 @@
 		1813243126DA00EF00026EAC /* FlickerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18A6485426DD5AA7009BBECC /* ViewController */,
+				18A6485326DD5A87009BBECC /* Cell */,
+				1813246C26DA066900026EAC /* Model */,
 				1813243226DA00EF00026EAC /* AppDelegate.swift */,
 				1813243426DA00EF00026EAC /* SceneDelegate.swift */,
-				1813243626DA00EF00026EAC /* ViewController.swift */,
-				1813243826DA00EF00026EAC /* Main.storyboard */,
+				1813246A26DA01C600026EAC /* Main.storyboard */,
 				1813243B26DA00F000026EAC /* Assets.xcassets */,
 				1813243D26DA00F000026EAC /* LaunchScreen.storyboard */,
 				1813244026DA00F000026EAC /* Info.plist */,
@@ -128,6 +160,56 @@
 			path = FlickerDemoUITests;
 			sourceTree = "<group>";
 		};
+		1813246C26DA066900026EAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1813246526DA015500026EAC /* SearchData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18A6485326DD5A87009BBECC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1813246426DA015500026EAC /* PhotoCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18A6485426DD5AA7009BBECC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1813243626DA00EF00026EAC /* ViewController.swift */,
+				18A6484C26DD1448009BBECC /* FavoriteCollectionViewController.swift */,
+				1813246326DA015500026EAC /* FlickrSearchCollectionViewController.swift */,
+				18A6484E26DD1809009BBECC /* MainTabbarViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		991783F8AE0ABE00B7553EF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				103149F08FC3034849AD49B3 /* Pods_FlickerDemo.framework */,
+				086562CAE66944175EE62A84 /* Pods_FlickerDemo_FlickerDemoUITests.framework */,
+				6120419EB1F73B79CC15157A /* Pods_FlickerDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FC92591F8652A23755E4410 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E282398B6CDD856C1D9771A5 /* Pods-FlickerDemo.debug.xcconfig */,
+				DB27C32D0D29E1F37F3A3B05 /* Pods-FlickerDemo.release.xcconfig */,
+				2F58B8DFBD700F276DDA001F /* Pods-FlickerDemo-FlickerDemoUITests.debug.xcconfig */,
+				9DB93F15440C1059A0688D48 /* Pods-FlickerDemo-FlickerDemoUITests.release.xcconfig */,
+				FCC014C6A7D0B1180CE76446 /* Pods-FlickerDemoTests.debug.xcconfig */,
+				FD3A0698DA51252504E32656 /* Pods-FlickerDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1813245926DA00F100026EAC /* Build configuration list for PBXNativeTarget "FlickerDemo" */;
 			buildPhases = (
+				0EF570FADFE0BE69C26750B5 /* [CP] Check Pods Manifest.lock */,
 				1813242B26DA00EF00026EAC /* Sources */,
 				1813242C26DA00EF00026EAC /* Frameworks */,
 				1813242D26DA00EF00026EAC /* Resources */,
+				D327C0770B1DB46E259D6701 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1813245C26DA00F100026EAC /* Build configuration list for PBXNativeTarget "FlickerDemoTests" */;
 			buildPhases = (
+				323C3F72C78EE8A6223B5BE2 /* [CP] Check Pods Manifest.lock */,
 				1813244126DA00F000026EAC /* Sources */,
 				1813244226DA00F000026EAC /* Frameworks */,
 				1813244326DA00F000026EAC /* Resources */,
@@ -170,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1813245F26DA00F100026EAC /* Build configuration list for PBXNativeTarget "FlickerDemoUITests" */;
 			buildPhases = (
+				5D2DDC43129298EDF9958491 /* [CP] Check Pods Manifest.lock */,
 				1813244C26DA00F100026EAC /* Sources */,
 				1813244D26DA00F100026EAC /* Frameworks */,
 				1813244E26DA00F100026EAC /* Resources */,
+				BA546ADE3BC3A399962DAB5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +320,7 @@
 			files = (
 				1813243F26DA00F000026EAC /* LaunchScreen.storyboard in Resources */,
 				1813243C26DA00F000026EAC /* Assets.xcassets in Resources */,
-				1813243A26DA00EF00026EAC /* Main.storyboard in Resources */,
+				1813246B26DA01C600026EAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +340,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EF570FADFE0BE69C26750B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		323C3F72C78EE8A6223B5BE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickerDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2DDC43129298EDF9958491 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickerDemo-FlickerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA546ADE3BC3A399962DAB5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickerDemo-FlickerDemoUITests/Pods-FlickerDemo-FlickerDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickerDemo-FlickerDemoUITests/Pods-FlickerDemo-FlickerDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlickerDemo-FlickerDemoUITests/Pods-FlickerDemo-FlickerDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D327C0770B1DB46E259D6701 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickerDemo/Pods-FlickerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickerDemo/Pods-FlickerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlickerDemo/Pods-FlickerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1813242B26DA00EF00026EAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A6484F26DD1809009BBECC /* MainTabbarViewController.swift in Sources */,
 				1813243726DA00EF00026EAC /* ViewController.swift in Sources */,
+				18A6486C26DE867F009BBECC /* Favorite.xcdatamodeld in Sources */,
+				1813246926DA015500026EAC /* SearchData.swift in Sources */,
 				1813243326DA00EF00026EAC /* AppDelegate.swift in Sources */,
+				18A6484D26DD1448009BBECC /* FavoriteCollectionViewController.swift in Sources */,
+				1813246726DA015500026EAC /* FlickrSearchCollectionViewController.swift in Sources */,
 				1813243526DA00EF00026EAC /* SceneDelegate.swift in Sources */,
+				1813246826DA015500026EAC /* PhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +492,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1813243826DA00EF00026EAC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1813243926DA00EF00026EAC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1813243D26DA00F000026EAC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +609,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,6 +621,7 @@
 		};
 		1813245A26DA00F100026EAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E282398B6CDD856C1D9771A5 /* Pods-FlickerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,12 +635,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com..FlickerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1813245B26DA00F100026EAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB27C32D0D29E1F37F3A3B05 /* Pods-FlickerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,12 +655,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com..FlickerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		1813245D26DA00F100026EAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC014C6A7D0B1180CE76446 /* Pods-FlickerDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +684,7 @@
 		};
 		1813245E26DA00F100026EAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3A0698DA51252504E32656 /* Pods-FlickerDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +707,7 @@
 		};
 		1813246026DA00F100026EAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F58B8DFBD700F276DDA001F /* Pods-FlickerDemo-FlickerDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +728,7 @@
 		};
 		1813246126DA00F100026EAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB93F15440C1059A0688D48 /* Pods-FlickerDemo-FlickerDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -593,6 +787,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18A6486A26DE867F009BBECC /* Favorite.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18A6486B26DE867F009BBECC /* Favorite.xcdatamodel */,
+			);
+			currentVersion = 18A6486B26DE867F009BBECC /* Favorite.xcdatamodel */;
+			path = Favorite.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1813242726DA00EE00026EAC /* Project object */;
 }
