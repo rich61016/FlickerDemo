@@ -1,0 +1,2 @@
+# FlickerDemo
+MVC架構
