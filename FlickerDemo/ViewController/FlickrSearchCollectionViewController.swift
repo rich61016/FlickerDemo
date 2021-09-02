@@ -14,6 +14,8 @@ class FlickrSearchCollectionViewController: UICollectionViewController {
     var qty:String!
     let refreshControl = UIRefreshControl()
     
+    var rowCount = 0
+    
     
     @objc  func fetchData() {
     
@@ -22,8 +24,9 @@ class FlickrSearchCollectionViewController: UICollectionViewController {
                 if let data = data, let searchData = try? JSONDecoder().decode(SearchData.self, from: data) {
 
                     self.photos = searchData.photos.photo
-
                     
+                    self.rowCount = self.photos.count
+                     
                     DispatchQueue.main.async {
                         self.collectionView.reloadData()
                         self.refreshControl.endRefreshing()
@@ -62,14 +65,14 @@ class FlickrSearchCollectionViewController: UICollectionViewController {
         refreshControl.attributedTitle = NSAttributedString(string: " ", attributes: attributes)
         refreshControl.addTarget(self, action: #selector(fetchData), for: UIControl.Event.valueChanged)
         collectionView.refreshControl = refreshControl
-        
+        collectionView.isPagingEnabled = true
 
     }
 
    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        
-        return photos.count
+        return rowCount
     }
 
   
@@ -86,5 +89,16 @@ class FlickrSearchCollectionViewController: UICollectionViewController {
         return cell
     }
 
+    
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+              let contentHeight = scrollView.contentSize.height
 
+              if offsetY > contentHeight - scrollView.frame.size.height {
+                rowCount += Int(qty)!
+                photos += photos
+                 self.collectionView.reloadData()
+              }
+    }
 }
+
